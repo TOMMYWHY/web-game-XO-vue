@@ -68,18 +68,18 @@ export default {
             };
             for (let i = 0; i < 2; i++) {
                 if(this.map[0][i]!=null && this.map[0][i]==this.map[1][i] && this.map[2][i]==this.map[1][i]){
-                    this.result = true
+                    this.result = this.map[i][0]
                 }
             };
             if(this.map[0][0]!=null &&
                 this.map[0][0] && this.map[1][1] &&
                 this.map[2][2] && this.map[1][1] ){
-                this.result = true
+                this.result = this.map[i][0]
             };
             if(this.map[0][2]!=null &&
                 this.map[0][0] == this.map[1][1] &&
                 this.map[2][2] == this.map[1][1] ){
-                this.result = true
+                this.result = this.map[i][0]
             }
         }
     }
